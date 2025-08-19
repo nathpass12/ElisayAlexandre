@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirma tu asistencia</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Avenir&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Confirma tu asistencia</h1>
+    </header>
+
+    <main>
+        <form action="mailto:nata.passaga@gmail.com" method="post" enctype="text/plain">
+            <label>Nombre y Apellido: <input type="text" name="nombre" required></label>
+
+            <label>¿Asistirás? 
+                <select name="asistira" required>
+                    <option value="">Selecciona</option>
+                    <option value="sí">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>¿Vienes con acompañante? 
+                <select name="acompanante" required>
+                    <option value="">Selecciona</option>
+                    <option value="sí">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Nombre del invitado: <input type="text" name="nombre_invitado"></label>
+            <label>¿Tienes alguna restricción alimentaria? <input type="text" name="restriccion"></label>
+
+            <label>Servicio de autobús:
+                <select name="bus" required>
+                    <option value="">Selecciona</option>
+                    <option value="sí">Sí</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Preguntas o comentarios: <textarea name="comentarios"></textarea></label>
+            <label>Dirección postal: <input type="text" name="direccion"></label>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Elisa: +34 XXXXXXXX | Alexandre: +34 XXXXXXXX</p>
+    </footer>
+</body>
+</html>
