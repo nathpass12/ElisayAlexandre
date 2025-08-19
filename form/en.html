@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm your attendance</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda&family=Avenir&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Confirm your attendance</h1>
+    </header>
+
+    <main>
+        <form action="mailto:nata.passaga@gmail.com" method="post" enctype="text/plain">
+            <label>Full Name: <input type="text" name="name" required></label>
+
+            <label>Will you attend? 
+                <select name="attend" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Will you come with a guest? 
+                <select name="guest" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Guest's Name: <input type="text" name="guest_name"></label>
+            <label>Do you have any dietary restrictions? <input type="text" name="diet"></label>
+
+            <label>Bus service:
+                <select name="bus" required>
+                    <option value="">Select</option>
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+
+            <label>Questions or comments: <textarea name="comments"></textarea></label>
+            <label>Postal address: <input type="text" name="address"></label>
+
+            <button type="submit">Send</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>Elisa: +34 XXXXXXXX | Alexandre: +34 XXXXXXXX</p>
+    </footer>
+</body>
+</html>
